@@ -1,0 +1,67 @@
+/* CSS declarations go here */
+h1 {
+    font-family: "Roboto Slab", Arial, sans-serif;
+    color: #333;
+}
+
+body {
+	font-family: "Work Sans", Arial, sans-serif;
+	color: #333;
+}
+
+#clearAllMessagesButton, #sendMessageButton {
+	color: #FFF;
+	height: 30px;
+	width: 50px;
+	font-family: "Work Sans", Arial, sans-serif;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: none;
+}
+
+#clearAllMessagesButton {
+	margin-bottom: 4px;
+}
+
+#sentAndReceived {
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid #AAA;
+}
+
+#myMessage {
+	color: #333;
+	font-family: "Work Sans", Arial, sans-serif;
+	background-color: rgba(255, 255, 255, 0.5);
+    margin: 10px 10px 0px 0;
+}
+
+/* Some of this code comes from http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video */
+
+video#bgvideo { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    background: url(skygrass_canstockphoto.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size:cover;
+    background-size: cover; 
+}
+
+video { 
+	display: block; 
+}
+
+@media screen and (max-device-width: 768px) {
+    html {
+         background: url(skygrass_canstockphoto.jpg) #000 no-repeat center center fixed;
+    }
+    #bgvideo {
+        display: none;
+    }
+}
